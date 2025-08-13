@@ -1,0 +1,30 @@
+{
+  "name": "roamly",
+  "version": "1.0.0",
+  "description": "✈️ Roamly: Your Smart Travel Companion",
+  "homepage": "https://github.com/datta-sayak/roamly#readme",
+  "bugs": {
+    "url": "https://github.com/datta-sayak/roamly/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datta-sayak/roamly.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1"
+  }
+}
