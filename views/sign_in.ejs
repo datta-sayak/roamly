@@ -1,105 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-
-  	<link rel="stylesheet"  href="../public/styles/sign_in.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"/>
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../public/styles/sign_in.css">
+  <title>Sign Up</title>
 </head>
 <body>
+  <div class="sign-up-page">
+    <img class="logo-icon" alt="Logo" src="../public/src/Logo.png">
 
-  	<div class="sign-up-page">
-    		<div class="sign-up-page-inner">
-      			<div class="frame-parent">
-        				<div class="get-started-now-wrapper">
-          					<div class="get-started-now">Get Started Now</div>
-        				</div>
-        				<div class="frame-group">
-          					<div class="name-wrapper">
-            						<div class="get-started-now">Name</div>
-          					</div>
-          					<div class="frame-wrapper">
-            						<div class="enter-your-name-wrapper">
-              							<div class="get-started-now">Enter your name</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="frame-container">
-          					<div class="name-wrapper">
-            						<div class="get-started-now">Email address</div>
-          					</div>
-          					<div class="frame-div">
-            						<div class="enter-your-name-wrapper">
-              							<div class="get-started-now">Enter your email</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="frame-parent1">
-          					<div class="name-wrapper">
-            						<div class="get-started-now">Password</div>
-          					</div>
-          					<div class="frame-div">
-            						<div class="enter-your-name-wrapper">
-              							<div class="get-started-now">Name</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="line-parent">
-          					<div class="frame-child">
-          					</div>
-          					<div class="or-wrapper">
-            						<div class="get-started-now">Or</div>
-          					</div>
-        				</div>
-        				<div class="i-agree-to-the-terms-policy-parent">
-          					<div class="i-agree-to-container">I agree to the
-            						<span class="terms-policy">terms & policy</span>
-          					</div>
-          					<div class="group-child">
-          					</div>
-        				</div>
-        				<div class="group-wrapper">
-          					<div class="have-an-account-sign-in-wrapper">
-            						<div class="have-an-account-container">
-              							<span class="have-an-account">Have an account?  </span>
-              							<span class="login">Login</span>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="instance-parent">
-          					<div class="frame-wrapper2">
-            						<div class="frame-wrapper3">
-              							<div class="frame-item">
-              							</div>
-            						</div>
-          					</div>
-          					<b class="login1">Signup</b>
-        				</div>
-        				<div class="frame-wrapper4">
-          					<div class="icons8-google-1-parent">
-            						<img class="icons8-google-1" alt="" src="icons8-google 1.svg">
+    <div class="form-container">
+      <h1 class="form-title">Get Started Now</h1>
 
-            						<div class="get-started-now">Sign in with Google</div>
-          					</div>
-        				</div>
-        				<div class="frame-wrapper5">
-          					<div class="icons8-apple-logo-1-parent">
-            						<img class="icons8-google-1" alt="" src="icons8-apple-logo 1.svg">
+      <form action="a" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
 
-            						<div class="get-started-now">Sign in with Apple</div>
-          					</div>
-        				</div>
-      			</div>
-    		</div>
-    		<img class="unsplashstlaxeyg8zu-icon" alt="" src="unsplash:StLAXeyG8ZU.png">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
 
-  	</div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
 
+        <label for="category">Select Category</label>
+        <select id="category" name="category">
+          <option value="Guide">Guide</option>
+          <option value="Explorer">Explorer</option>
+        </select>
 
+        <div class="checkbox-row">
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a></label>
+        </div>
 
+        <button type="submit">Sign Up</button>
+      </form>
 
+      <div class="divider">Or</div>
+
+      <div class="social-signin">
+        <div class="google-signin">
+          <img src="../public/src/googlelogo.png" width="20" height="20" alt="Google">
+          <span>Sign in with Google</span>
+        </div>
+        <div class="apple-signin">
+          <img src="../public/src/applelogo.png" width="20" height="20" alt="Apple">
+          <span>Sign in with Apple</span>
+        </div>
+      </div>
+
+      <div class="login-prompt">
+        <span>Have an account? </span><a href="#" class="login-link">Login</a>
+      </div>
+    </div>
+
+    <img class="side-icon" alt="Cover" src="../public/src/cover.jpg">
+  </div>
 </body>
 </html>
