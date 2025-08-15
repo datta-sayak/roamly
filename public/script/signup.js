@@ -4,8 +4,8 @@ function showMessage(type, msg) {
     const successDiv = document.getElementById('success');
     const errorDiv = document.getElementById('error');
 
-    //successDiv.classList.remove('active');
-    //errorDiv.classList.remove('active');
+    successDiv.classList.remove('active');
+    errorDiv.classList.remove('active');
 
     const target = type === 'error' ? successDiv : errorDiv;
     target.classList.add('active');

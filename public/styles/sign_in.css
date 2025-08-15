@@ -38,39 +38,41 @@ body {
   gap: 10px;
   padding: 10px;
   position: relative;
-  left: 900px;
+  left: 30%;
+  transform: translateX(50%);
   width: 300px;
   height: 30px;
   border-radius: 50px;
-  background-color: rgb(143, 216, 152);
+  background-color: rgb(185, 231, 190);
   z-index: 2;
   color: green;
 }
-.gif {
+.icon{
   width: 50px;
   height: auto;
 }
 
-.failure{
+.error{
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 10px;
   position: relative;
-  left: 900px;
+  left: 30%;
+  transform: translateX(50%);
   width: 300px;
   height: 30px;
   border-radius: 50px;
-  background-color: rgb(216, 143, 143);
-  z-index: 2;
-  color: rgb(226, 17, 17);
+  background-color: rgb(233, 196, 196);
+  z-index: 3;
+  color: #c62828;
 }
 
-#success, #failure{
+#success, #error{
   display: none;
-}
+} 
 
-.success.active,.failure.active{
+.success.active,.error.active{
   display: block;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
@@ -82,6 +84,7 @@ body {
   padding: 40px;
   top: 150px;
   left:250px;
+  transform: translateX(-50%,-50%);
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -107,6 +110,10 @@ input, select {
   border: 1px solid #ccc;
   border-radius: 20px;
   font-size: 14px;
+}
+input:focus, select:focus, button:focus {
+  outline: 2px solid #3b90fb;
+  outline-offset: 2px;
 }
 
 .checkbox-row {
