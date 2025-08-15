@@ -7,7 +7,7 @@ function showMessage(type, msg) {
     successDiv.classList.remove('active');
     errorDiv.classList.remove('active');
 
-    const target = type === 'error' ? successDiv : errorDiv;
+    const target = type === 'success' ? successDiv : errorDiv;
     target.classList.add('active');
     console.log(msg);
 
