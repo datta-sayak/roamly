@@ -2,26 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../public/styles/sign_in.css">
   <title>Sign Up</title>
 </head>
 <body>
   <div class="sign-up-page">
+  <div id="success" class="success">
+  <img src="../public/src/tick.gif" alt="success" class="gif" />
+  <p class="text">Registerred Successfully!</p>
+  </div>
+  <div id="error" class="failure">
+  <img src="../public/src/cross.jpg" alt="fail" class="gif" />
+  <p class="text">Failed to Register</p>
+  </div>
     <img class="logo-icon" alt="Logo" src="../public/src/Logo.png">
 
     <div class="form-container">
       <h1 class="form-title">Get Started Now</h1>
 
-      <form action="a" method="POST">
+      <form id="signupForm" action="a" method="POST">
         <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter your name">
+        <input type="text" id="name" name="fullname" placeholder="Enter your name">
+
+        <label for="username">Username</label>
+        <input type="usedId" id="username" name="username" placeholder="Enter username">
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Enter your email">
 
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter password">
+        <input type="password" id="password" name="password" placeholder="Enter password">
 
         <label for="category">Select Category</label>
         <select id="category" name="category">
@@ -57,6 +68,7 @@
 
     <img class="side-icon" alt="Cover" src="../public/src/cover.jpg">
   </div>
+  <script type="module" src="../script/sign_in.js"></script>
 </body>
 <script src="../public/script/client.register.js"></script>
 </html>

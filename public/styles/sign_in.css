@@ -29,8 +29,46 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0.9;
-  border-radius: 52px 0px 0px 52px;
+  border-radius: 100px 0px 0px 100px;
+}
 
+.success {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  left: 900px;
+  width: 300px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgb(143, 216, 152);
+  z-index: 2;
+  color: green;
+}
+.gif {
+  width: 50px;
+  height: auto;
+}
+
+.failure{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  left: 900px;
+  width: 300px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgb(216, 143, 143);
+  z-index: 2;
+  color: rgb(226, 17, 17);
+}
+.success.active,.failure.active{
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .form-container {
