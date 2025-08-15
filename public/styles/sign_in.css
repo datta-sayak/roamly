@@ -65,6 +65,11 @@ body {
   z-index: 2;
   color: rgb(226, 17, 17);
 }
+
+#success, #failure{
+  display: none;
+}
+
 .success.active,.failure.active{
   display: block;
   opacity: 1;

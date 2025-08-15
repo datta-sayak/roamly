@@ -1,3 +1,5 @@
+//import CryptoJS from 'crypto-js';
+
 function showMessage(type) {
   const successDiv = document.getElementById('success');
   const errorDiv = document.getElementById('error');
@@ -20,14 +22,15 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
   const data = Object.fromEntries(formData.entries());
   const jsonString = JSON.stringify(data);
 
-  const secretKey = 'your-secret-key'; // Replace with secure key
-  const encrypted = CryptoJS.AES.encrypt(jsonString, secretKey).toString();
-
+  //const secretKey = 'yoooyo'; // Replace with secure key
+  //const encrypted = CryptoJS.AES.encrypt(jsonString, secretKey).toString();
+  console.log(jsonString)
+  console.log("--------------")
   //edit this part
-  fetch('/your-endpoint', {
+  fetch('http://localhost:3000/api/register', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ payload: encrypted })
+    body: JSON.stringify({ jsonString })
   })
   .then(res => res.json())
   .then(response => {
@@ -37,7 +40,8 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
       showMessage('error');
     }
   })
-  .catch(() => {
+  .catch((error) => {
+    console.log(error);
     showMessage('error');
   });
 });

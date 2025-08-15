@@ -10,7 +10,7 @@
   <div class="sign-up-page">
   <div id="success" class="success">
   <img src="../public/src/tick.gif" alt="success" class="gif" />
-  <p class="text">Registerred Successfully!</p>
+  <p class="text">Registered Successfully!</p>
   </div>
   <div id="error" class="failure">
   <img src="../public/src/cross.jpg" alt="fail" class="gif" />
@@ -21,9 +21,9 @@
     <div class="form-container">
       <h1 class="form-title">Get Started Now</h1>
 
-      <form id="signupForm" action="a" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="fullname" placeholder="Enter your name">
+      <form id="signupForm" method="POST">
+        <label for="fullName">Name</label>
+        <input type="text" id="name" name="fullName" placeholder="Enter your name">
 
         <label for="username">Username</label>
         <input type="usedId" id="username" name="username" placeholder="Enter username">
@@ -68,7 +68,7 @@
 
     <img class="side-icon" alt="Cover" src="../public/src/cover.jpg">
   </div>
-  <script type="module" src="../script/sign_in.js"></script>
+  <script type="module" src="../public/script/signup.js"></script>
 </body>
-<script src="../public/script/client.register.js"></script>
+<script type="module" src="../public/script/signup.js"></script>
 </html>

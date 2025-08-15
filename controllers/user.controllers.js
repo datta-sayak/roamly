@@ -7,7 +7,7 @@ const registerUser = asyncHandler( async (req, res) => {
 
     const { username, email, fullName, password, isGuide } = req.body;
 
-    if( username === "" )   throw new ApiError(400, "Username cannot be blank");
+    if( username === undefined )   return res.status(400).json(new ApiResponse(400, "Username cannot be blank"))
     if( email === "" )      throw new ApiError(400, "Email cannot be blank");
     if( fullName === "" )   throw new ApiError(400, "Full name cannot be blank");
     if( password === "" )   throw new ApiError(400, "Password cannot be blank");
@@ -15,9 +15,9 @@ const registerUser = asyncHandler( async (req, res) => {
     const existingUserName = await User.findOne({ username })
     const existingEmail = await User.findOne({ email })
 
-    if(existingUserName && existingEmail)     throw new ApiError(409, "Username and Email already exists")
-    else if (existingEmail)                   throw new ApiError(409, "Email already in use")
-    else if (existingUserName)                throw new ApiError(409, "Username already in use")
+    if(existingUserName && existingEmail)     return res.status().json(new ApiResponse(409, "Username and Email already exists"))
+    else if (existingEmail)                   return res.status().json(new ApiResponse(409, "Email already in use"))
+    else if (existingUserName)                return res.status().json(new ApiResponse(409, "Username already exists"))
 
     const entryDB = await User.create({
         username: username.toLowerCase(),
