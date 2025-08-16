@@ -8,14 +8,8 @@
 </head>
 <body>
   <div class="sign-up-page">
-  <div id="success" class="success">
-  <img src="../public/src/tick.gif" alt="success" class="icon" />
-  <p class="text">Registered Successfully!</p>
-  </div>
-  <div id="error" class="error">
-  <img src="../public/src/cross.jpg" alt="fail" class="icon" />
-  <p class="text">Failed to Register</p>
-  </div>
+    <div id="notification" class="hidden"></div>
+
     <img class="logo-icon" alt="Logo" src="../public/src/Logo.png">
 
     <div class="form-container">
@@ -36,8 +30,8 @@
 
         <label for="category">Select Category</label>
         <select id="category" name="category">
-          <option value="Guide">Guide</option>
           <option value="Explorer">Explorer</option>
+          <option value="Guide">Guide</option>
         </select>
 
         <div class="checkbox-row">

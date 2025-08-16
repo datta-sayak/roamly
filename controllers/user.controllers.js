@@ -7,17 +7,14 @@ const registerUser = asyncHandler( async (req, res) => {
 
     const { username, email, fullName, password, isGuide } = req.body;
 
-    if( !username )    return res.status(400).json(new ApiResponse(400, "Username cannot be blank"))
-    if( !email )              return res.status(400).json(new ApiResponse(400, "Email cannot be blank"))
-    if( !fullName )           return res.status(400).json(new ApiResponse(400, "Name cannot be blank"))
-    if( !password )           return res.status(400).json(new ApiResponse(400, "Password cannot be blank"))
+    if( !username || !email || !fullName || !password)           return res.status(400).json(new ApiResponse(400, "Fill all the details"))
 
     const existingUserName = await User.findOne({ username })
     const existingEmail = await User.findOne({ email })
 
     if(existingUserName && existingEmail)     return res.status(409).json(new ApiResponse(409, "Username and Email already exists"))
     else if (existingEmail)                   return res.status(409).json(new ApiResponse(409, "Email already in use"))
-    else if (existingUserName)                return res.status(409).json(new ApiResponse(409, "Username already exists"))
+    else if (existingUserName)                return res.status(409).json(new ApiResponse(409, "Username taken"))
 
     const entryDB = await User.create({
         username: username.toLowerCase(),
@@ -34,8 +31,7 @@ const registerUser = asyncHandler( async (req, res) => {
     console.log(`Created new user ${createdUser.username}`)
     return res
         .status(201)
-        .json(
-        new ApiResponse(200, createdUser, "User registered successfully")
+        .json(new ApiResponse(201, createdUser, "User registered successfully")
     )
 })
 

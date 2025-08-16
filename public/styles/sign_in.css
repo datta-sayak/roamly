@@ -32,50 +32,42 @@ body {
   border-radius: 100px 0px 0px 100px;
 }
 
-.success {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  position: relative;
-  left: 30%;
-  transform: translateX(50%);
-  width: 300px;
-  height: 30px;
-  border-radius: 50px;
-  background-color: rgb(185, 231, 190);
-  z-index: 2;
-  color: green;
-}
-.icon{
-  width: 50px;
-  height: auto;
+#notification {
+  position: fixed;
+  top: 20px;
+  right: 68.5%;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 9999;
 }
 
-.error{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  position: relative;
-  left: 30%;
-  transform: translateX(50%);
-  width: 300px;
-  height: 30px;
-  border-radius: 50px;
-  background-color: rgb(233, 196, 196);
-  z-index: 3;
-  color: #c62828;
-}
-
-#success, #error{
-  display: none;
-} 
-
-.success.active,.error.active{
-  display: block;
+#notification.show {
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
+  transform: translateY(0);
+}
+
+#notification.success {
+  background-color: green;
+}
+
+#notification.error {
+  background-color: red;
+}
+
+#notification.custom {
+  background-color: darkgrey;
+  border-left: 10px solid grey;
+}
+
+.hidden {
+  display: none;
 }
 
 .form-container {
@@ -84,7 +76,7 @@ body {
   padding: 40px;
   top: 150px;
   left:250px;
-  transform: translateX(-50%,-50%);
+  transform: translateX(-50%, -50%);
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);

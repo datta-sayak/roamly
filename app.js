@@ -17,8 +17,8 @@ app.set('view engine', 'ejs');
 app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${process.env.PORT}`);
 })
-// import connectDB from "./config/dbConnection.js";
-// connectDB();
+import connectDB from "./config/dbConnection.js";
+connectDB();
 
 
 /* ROUTES IMPORT */
