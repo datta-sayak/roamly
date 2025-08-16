@@ -3,43 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../public/styles/signup.css">
+  <link rel="stylesheet" href="../public/styles/signin.css">
   <title>Sign Up</title>
 </head>
 <body>
-  <div class="sign-up-page">
+  <div class="sign-in-page">
     <div id="notification" class="hidden"></div>
 
     <img class="logo-icon" alt="Logo" src="../public/src/Logo.png">
 
     <div class="form-container">
-      <h1 class="form-title">Get Started Now</h1>
+      <h1 class="form-title">Welcome Back!</h1>
+      <p>Enter your credentials to access your account</p><br><br>
 
-      <form id="signupForm" method="POST">
-        <label for="fullName">Name</label>
-        <input type="text" id="name" name="fullName" placeholder="Enter your name">
-
+      <form id="signinForm" method="POST">
         <label for="username">Username</label>
         <input type="usedId" id="username" name="username" placeholder="Enter username">
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
 
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter password">
 
-        <label for="category">Select Category</label>
-        <select id="category" name="category">
-          <option value="Explorer">Explorer</option>
-          <option value="Guide">Guide</option>
-        </select>
-
         <div class="checkbox-row">
           <input type="checkbox" id="agree" name="agree" required>
-          <label for="agree">I agree to the <a href="http://localhost:3000/terms" target="_blank">Terms and Conditions</a></label>
+          <label for="agree">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a></label>
         </div>
 
-        <button type="submit">Sign Up</button>
+        <button type="submit">Sign In</button>
       </form>
 
       <div class="divider">Or</div>
@@ -55,8 +44,8 @@
         </div>
       </div>
 
-      <div class="login-prompt">
-        <span>Have an account? </span><a href="http://localhost:3000/signin" class="login-link">Login</a>
+      <div class="signin-prompt">
+        <span>Don't have an account? </span><a href="http://localhost:3000/signup" class="signin-link">Create account</a>
       </div>
     </div>
 

@@ -5,7 +5,7 @@ body {
   background-color: #fff;
 }
 
-.sign-up-page {
+.sign-in-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,12 +172,12 @@ button:hover {
   cursor: pointer;
 }
 
-.login-prompt {
+.signin-prompt {
   text-align: center;
   font-size: 0.9rem;
 }
 
-.login-link {
+.signin-link {
   color: #3b90fb;
   text-decoration: none;
   font-weight: 500;
@@ -202,7 +202,7 @@ button:hover {
   .logo-icon, .side-icon {
     display: none;
   }
-  .sign-up-page {
+  .sign-in-page {
     transform: translateX(-40px);
   } 
 }

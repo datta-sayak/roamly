@@ -17,4 +17,8 @@ router.get('/signin', (req, res) => {
     res.render('signin.ejs');
 });
 
+router.get('/terms', (req, res) => {
+    res.render('terms.ejs');
+});
+
 export default router;
