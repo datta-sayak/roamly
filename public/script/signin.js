@@ -5,21 +5,25 @@ function showNotification(message, type) {
     setTimeout(() => notification.classList.remove('show'), 3000);
 }
 
-document.getElementById('signupForm').addEventListener('submit', async function (e) {
+document.getElementById('signinForm').addEventListener('submit', async function (e) {
     e.preventDefault();
 
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-    if(!data.fullName || !data.username || !data.email || !data.password || !data.category){
-        showNotification('Please fill all the details', 'custom');
+    
+    if(!data.username){
+        showNotification('Please enter username', 'custom');
         return;
     }
-    data.isGuide = data.category === 'Guide';
-    delete data.category;
+    if(!data.password){
+        showNotification('Please enter password', 'custom');
+        return;
+    }
+
     const jsonString = JSON.stringify(data);
 
     try {
-        const res = await fetch('http://localhost:3000/api/register', {
+        const res = await fetch('http://localhost:3000/api/login', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: jsonString
@@ -27,17 +31,17 @@ document.getElementById('signupForm').addEventListener('submit', async function 
         const ans = await res.json();
         if (!ans.statusCode)    showNotification(ans.data, 'custom');
         else {
-            showNotification('Registered Successfully!', 'success');
+            showNotification('Logged in Successfully!', 'success');
             setTimeout( () => {
                 window.location.reload();
-                window.location.href = '/signin';
+                window.location.href = '/tour';
             } , 500);
         }
     } catch (error) {
-        showNotification('Failed to Register!', 'error');
+        showNotification('Failed to Login', 'error');
         console.log(error);
     }
-    document.getElementById("signupForm").reset();
+    document.getElementById("signinForm").reset();
 
 
 });

@@ -3,6 +3,20 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { User } from "../models/users.models.js"
 
+const generateRefreshToken = async (userId) => {
+    try {
+        const userInstanceOfDB = await User.findById(userId)
+        const refreshToken = userInstanceOfDB.generateRefreshToken()
+        //updating the DB with the refresh token
+        userInstanceOfDB.refreshToken = refreshToken
+        await userInstanceOfDB.save({ validationBeforeSave: false })
+        return refreshToken;
+
+    } catch (error) {
+        throw new ApiError(500, "Failed to generate refresh token");
+    }
+}
+
 const registerUser = asyncHandler( async (req, res) => {
 
     const { username, email, fullName, password, isGuide } = req.body;
@@ -24,7 +38,7 @@ const registerUser = asyncHandler( async (req, res) => {
         isGuide,
     })
 
-    const createdUser = await User.findById(entryDB._id).select("-password")
+    const createdUser = await User.findById(entryDB._id).select("-password -refreshToken")
 
     if(!createdUser)    throw new ApiError(500, "Something went wrong while updating the DB")
 
@@ -37,21 +51,27 @@ const registerUser = asyncHandler( async (req, res) => {
 
 const loginUser = asyncHandler( async (req, res) => {
 
-    const { username, email, password } = req.body
-    if ( !(username || email) )      throw new ApiError(400,"Username or email is required to login")
+    const { username, password } = req.body
+    if (!username)      return res.status(400).json(new ApiResponse(400, "Please enter username"));
 
-    const user = await User.findOne({
-        $or: [ {username}, {email}]
-    })
-    if(!user)   throw new ApiError(404,"User does not exist")
+    const user = await User.findOne({ username })
+    if(!user)   return res.status(404).json(new ApiResponse(404, "User does not exist"));
 
     const psswdCheck = await user.isPasswordCorrect(password)
-    if(!psswdCheck) throw new ApiError(404,"Wrong password")
+    if(!psswdCheck) return res.status(404).json(new ApiResponse(404, "Incorrect password"));
 
-    const usrInstance = await User.findById(user._id).select("-password")
+    const refreshToken = await generateRefreshToken(user._id)
+
+    const usrInstance = await User.findById(user._id).select("-password -refreshToken")
+    
+    const options = {
+        httpOnly: true,
+        secure: true
+    }
 
     return res
             .status(200)
+            .cookie("refreshToken", refreshToken, options)
             .json(new ApiResponse(200, {usrInstance}, "User logged in successfully"))
 })
 
