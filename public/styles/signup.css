@@ -70,10 +70,6 @@ body {
   border-left: 10px solid grey;
 }
 
-.hidden {
-  display: none;
-}
-
 .form-container {
   max-width: 400px;
   width: 100%;
@@ -187,36 +183,6 @@ button:hover {
   font-weight: 500;
 }
 
-.success, .error {
-  display: none;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  border-radius: 50px;
-  z-index: 2;
-  font-size: 0.9rem;
-}
-.success {
-  background-color: rgb(185, 231, 190);
-  color: green;
-}
-.error {
-  background-color: rgb(233, 196, 196);
-  color: #c62828;
-}
-.success.active, .error.active {
-  display: flex;
-  opacity: 1;
-}
-.icon {
-  width: 20px;
-  height: auto;
-}
 @media (max-width: 768px) {
   .form-container {
     padding: 20px;

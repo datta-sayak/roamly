@@ -1,7 +1,7 @@
 function showNotification(message, type) {
     const notification = document.getElementById('notification');
     notification.textContent = message;
-    notification.className = `${type} show`;
+    notification.className = `notification ${type} show`;
     setTimeout(() => notification.classList.remove('show'), 3000);
 }
 
@@ -26,11 +26,18 @@ document.getElementById('signupForm').addEventListener('submit', async function 
         })
         const ans = await res.json();
         if (!ans.statusCode)    showNotification(ans.data, 'custom');
-        else    showNotification('Registered Successfully!', 'success');
-
+        else {
+            showNotification('Registered Successfully!', 'success');
+            setTimeout( () => {
+                window.location.reload();
+                window.location.href = '/tour';
+            } , 1000);
+        }
     } catch (error) {
         showNotification('Failed to Register!', 'error');
         console.log(error);
     }
+    document.getElementById("signupForm").reset();
+
 
 });
