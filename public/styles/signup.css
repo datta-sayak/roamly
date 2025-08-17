@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -10,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  min-height: 100dvh;
+  min-height: 100vh;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -39,7 +45,7 @@ body {
 #notification {
   position: fixed;
   top: 20px;
-  right: 68.5%;
+  transform: translateX(-50%);
   padding: 12px 18px;
   border-radius: 8px;
   color: white;
@@ -47,7 +53,6 @@ body {
   font-family: sans-serif;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   opacity: 0;
-  transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   z-index: 9999;
 }
@@ -75,8 +80,7 @@ body {
   width: 100%;
   right: 10%;
   padding: 40px;
-  top: 50px;
-  right:350px;
+  right: 350px;
   transform: translateX(-50%, -50%);
   background-color: #fff;
   border-radius: 20px;
@@ -184,10 +188,26 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  #notification {
+    max-width: 90%;
+    white-space: nowrap;
+    text-align: center;
+    transform: translateX(-50%);
+    right: auto;
+  }
+  
+  .logo-icon {
+    position: absolute;
+    left: 50%;              
+    transform: translateX(-50%); 
+    width: 180px;
+  }
+
   .form-container {
-    left: 70px;
+    top: 20px;
+    left: 0px;
     padding: 20px;
-    width: 90%;
+    max-width: 100%;
   }
 
   .form-title {
@@ -195,14 +215,12 @@ button:hover {
   }
 
   .checkbox-row {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
+    
   }
 
-  .logo-icon, .side-icon {
+  .side-icon {
     display: none;
   }
-  .sign-up-page {
-    transform: translateX(-40px);
-  } 
 }

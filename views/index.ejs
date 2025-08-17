@@ -1,322 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-	<link rel="icon" type="image/png" href="../public/src/slogo.png">
-  	<link rel="stylesheet" href="../public/styles/index.css"/>
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" />
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../public/src/slogo.png">
+  <title>Roamly - Explore India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../public/styles/index.css">
 
 </head>
 <body>
 
-  	<div class="home">
-    		<div class="header">
-      			<div class="container">
-        				<div class="divheader-logo">
-          					<div class="divheader-search">
-            						<div class="input">
-              							<div class="search-destinations-or">Search destinations or activities</div>
-            						</div>
-            						<img class="iconlylight-outlinesearch" alt="" src="../src/Light-outline/Search.png">
+  <!-- NAVBAR -->
+  <header>
+    <img class="logo-icon" alt="Logo" src="../public/src/Logo.png">
+    <div class="search-bar">
+      <input type="text" placeholder="Search destinations or activities">
+    </div>
+    <nav>
+      <a href="#">Destinations</a>
+      <a href="#">Points</a>
+      <a href="#">Bookings</a>
+      <button class="btn btn-outline">Sign up</button>
+      <button class="btn btn-primary">Log in</button>
+    </nav>
+  </header>
 
-          					</div>
-        				</div>
-        				<div class="divheader-right">
-          					<div class="link-sign">Sign up</div>
-          					<div class="link">
-            						<div class="log-in">Log in</div>
-          					</div>
-          					<div class="symbol"></div>
-          					<div class="divheaderdropdown-button">
-            						<div class="destinations">Destinations</div>
-            						<div class="symbol1"></div>
-          					</div>
-          					<div class="divheaderdropdown-button1">
-            						<div class="activities">Activities</div>
-            						<div class="symbol2"></div>
-          					</div>
-          					<div class="divheaderdropdown-button2">
-            						<div class="bookings">Bookings</div>
-          					</div>
-        				</div>
-        				<img class="chatgpt-image-aug-12-2025-08-icon" alt="" src="ChatGPT_Image_Aug_12,_2025,_08_12_09_PM[1] 1.png">
+  <!-- HERO -->
+  <div class="hero">
+	<img src="../public/src/hero.jpg" alt="India Travel" class="hero-img">
+    <h1>Explore the Soul of India <br> — All in One Place</h1>
+    <div class="search-panel">
+      <div>
+        <label>Where</label><br>
+        <input type="text" placeholder="Search destinations">
+      </div>
+      <div>
+        <label>When</label><br>
+        <input type="date">
+      </div>
+      <div>
+        <label>Tour Type</label><br>
+        <select>
+          <option>Select type</option>
+          <option>Adventure</option>
+          <option>City</option>
+          <option>Nature</option>
+        </select>
+      </div>
+      <button>Search</button>
+    </div>
+  </div>
 
-      			</div>
-    		</div>
-    		<img class="unsplasheu4pipu-8ha-icon" alt="" src="unsplash:eU4pipU_8HA.png">
+  <!-- TRENDING DESTINATIONS -->
+  <section>
+    <h2>Trending destinations</h2>
+    <div class="destinations">
+      <div>
+        <img src="../public/src/kerela.jpg" alt="Kerala">
+        <p>Kerala<br><small>100+ Tours</small></p>
+      </div>
+      <div>
+        <img src="../public/src/delhi.jpg" alt="Delhi">
+        <p>Delhi<br><small>300+ Tours</small></p>
+      </div>
+      <div>
+        <img src="../public/src/rajasthan.jpg" alt="Rajasthan">
+        <p>Rajasthan<br><small>400+ Tours</small></p>
+      </div>
+      <div>
+        <img src="../public/src/westbengal.jpg" alt="West Bengal">
+        <p>West Bengal<br><small>100+ Tours</small></p>
+      </div>
+      <div>
+        <img src="../public/src/northeast.jpg" alt="North East">
+        <p>North East<br><small>600+ Tours</small></p>
+      </div>
+    </div>
+  </section>
 
-    		<div class="home-child">
-    		</div>
-    		<div class="section">
-      			<div class="divsearchform-form">
-        				<div class="divsearchformitem-button">
-          					<div class="divsearchformitem-icon">
-            						<div class="symbol3"></div>
-          					</div>
-          					<div class="divsearchformitem-content">
-            						<div class="heading-5">Where</div>
-            						<div class="search-destinations">Search destinations</div>
-          					</div>
-        				</div>
-        				<div class="divsearchformitem-button1">
-          					<div class="divsearchformitem-icon">
-            						<div class="symbol3"></div>
-            						<img class="arcticonswhen-i-work" alt="" src="arcticons:when-i-work.svg">
+  <!-- POPULAR THINGS TO DO -->
+  <section>
+    <h2>Popular things to do</h2>
+    <div class="cards">
+      <img src="https://../public/src/.com/400x300/?cruise" alt="Cruises">
+      <img src="https://../public/src/.com/400x300/?beach" alt="Beach Tours">
+      <img src="https://../public/src/.com/400x300/?city" alt="City Tours">
+      <img src="https://../public/src/.com/400x300/?nature" alt="Nature Tour">
+      <img src="https://../public/src/.com/400x300/?food" alt="Food">
+      <img src="https://../public/src/.com/400x300/?hiking" alt="Hiking">
+    </div>
+  </section>
 
-          					</div>
-          					<div class="divsearchformitem-content1">
-            						<div class="heading-51">When</div>
-            						<div class="input1">
-              							<div class="select-dates">Select dates</div>
-            						</div>
-          					</div>
-        				</div>
-        				<div class="divsearchformitem-button2">
-          					<div class="divsearchformitem-icon">
-            						<div class="symbol3"></div>
-            						<img class="material-symbols-lightemoji-t-icon" alt="" src="material-symbols-light:emoji-transportation-rounded.svg">
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      Speak to our expert at <a href="tel:+919222333222">9222333222</a>
+    </div>
+    <div class="footer-columns">
+      <div>
+        <h4>Contact</h4>
+        <p>Tour of India Pvt. Ltd.<br>
+          4th Floor, Harmony Towers<br>
+          MG Road, Sector 29<br>
+          Gurugram, Haryana 122002<br>
+          India</p>
+        <p>Email: support@roamly.in</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Roamly Reviews</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Travel Guides</a></li>
+          <li><a href="#">Data Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Get in Touch</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Live Chat</a></li>
+          <li><a href="#">How it Works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <p>Subscribe to the free newsletter and stay up to date</p>
+        <input type="email" placeholder="Your email address" style="padding:0.5rem;width:100%;border:1px solid #ddd;border-radius:6px;margin:0.5rem 0;">
+        <button class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </footer>
 
-          					</div>
-          					<div class="divsearchformitem-content2">
-            						<div class="heading-52">Tour Type</div>
-            						<div class="select-type">Select type</div>
-          					</div>
-        				</div>
-        				<img class="material-symbols-lightwhere-t-icon" alt="" src="material-symbols-light:where-to-vote-outline-rounded.svg">
-
-      			</div>
-      			<div class="button" id="buttonContainer">
-        				<div class="symbol6"></div>
-        				<div class="search">Search</div>
-        				<img class="iconlylight-outlinesearch1" alt="" src="Iconly/Light-outline/Search.png">
-
-      			</div>
-    		</div>
-    		<div class="explore-the-soul">Explore the Soul of India — All in One Place</div>
-    		<div class="frame">
-      			<b class="heading-2">Trending destinations</b>
-      			<div class="link-see">See all</div>
-      			<div class="symbol7"></div>
-      			<div class="divoverflow-hidden">
-        				<div class="divswiper-wrapper">
-          					<div class="link1">
-            						<div class="divfeatureimage-image">
-              							<img class="image-icon" alt="" src="image.png">
-
-            						</div>
-            						<div class="heading-3">Kerela</div>
-            						<div class="tours">100+ Tours</div>
-          					</div>
-          					<div class="link2">
-            						<div class="divfeatureimage-image">
-              							<img class="image-icon" alt="" src="image.png">
-
-              							<img class="unsplashjdfqzlcfxrg-icon" alt="" src="unsplash:JdFQZLcfXRg.png">
-
-            						</div>
-            						<div class="heading-31">Delhi</div>
-            						<div class="tours1">300+ Tours</div>
-          					</div>
-          					<div class="link3">
-            						<div class="divfeatureimage-image">
-              							<img class="image-icon" alt="" src="image.png">
-
-              							<img class="unsplashnn3kv42-r3a-icon" alt="" src="unsplash:nn3kv42_R3A.png">
-
-            						</div>
-            						<div class="heading-32">Rajesthan</div>
-            						<div class="tours2">400+ Tours</div>
-          					</div>
-          					<div class="link4">
-            						<div class="divfeatureimage-image">
-              							<img class="image-icon" alt="" src="image.png">
-
-              							<img class="unsplash1i07sygwuys-icon" alt="" src="unsplash:1I07SYGwuys.png">
-
-            						</div>
-            						<div class="heading-33">West Bengal</div>
-            						<div class="tours">100+ Tours</div>
-          					</div>
-          					<div class="link5">
-            						<div class="divfeatureimage-image">
-              							<img class="image-icon" alt="" src="image.png">
-
-              							<img class="unsplashxqw7xgnvu3w-icon" alt="" src="unsplash:Xqw7XgnvU3w.png">
-
-            						</div>
-            						<div class="heading-34">North East</div>
-            						<div class="tours4">600+ Tours</div>
-          					</div>
-          					<div class="link6">
-            						<div class="divfeatureimage-image">
-              							<img class="image-icon" alt="" src="image.png">
-
-              							<img class="unsplashqxibcvva-jc-icon" alt="" src="unsplash:QXIBCvvA_jc.png">
-
-            						</div>
-            						<div class="heading-35">Chennai</div>
-            						<div class="tours5">200+ Tours</div>
-          					</div>
-          					<div class="link6">
-            						<div class="divfeatureimage-image">
-              							<img class="image-icon" alt="" src="image.png">
-
-              							<img class="unsplashqxibcvva-jc-icon" alt="" src="unsplash:QXIBCvvA_jc.png">
-
-            						</div>
-            						<div class="heading-35">Chennai</div>
-            						<div class="tours5">200+ Tours</div>
-          					</div>
-        				</div>
-      			</div>
-    		</div>
-    		<div class="frame1">
-      			<b class="heading-21">Popular things to do</b>
-      			<div class="link-see1">See all</div>
-      			<div class="symbol8"></div>
-      			<div class="link8">
-        				<div class="divfeaturecard-image">
-          					<img class="image-icon7" alt="" src="image.png">
-
-          					<div class="after">
-          					</div>
-        				</div>
-        				<div class="heading-4">Cruises</div>
-      			</div>
-      			<div class="link9">
-        				<div class="divfeaturecard-image">
-          					<img class="image-icon8" alt="" src="image.png">
-
-          					<div class="after">
-          					</div>
-          					<img class="unsplash3t0dkhdxjie-icon" alt="" src="unsplash:3T0DkhdXjIE.png">
-
-        				</div>
-        				<div class="heading-41">Beach Tours</div>
-      			</div>
-      			<div class="link10">
-        				<div class="divfeaturecard-image">
-          					<img class="image-icon7" alt="" src="image.png">
-
-          					<div class="after">
-          					</div>
-          					<img class="unsplashsofdljjvrgo-icon" alt="" src="unsplash:soFDLjjvRgo.png">
-
-        				</div>
-        				<div class="heading-42">City Tours</div>
-      			</div>
-      			<div class="link11">
-        				<div class="divfeaturecard-image">
-          					<img class="image-icon7" alt="" src="image.png">
-
-          					<div class="after">
-          					</div>
-          					<img class="unsplashobtdtwhgnfo-icon" alt="" src="unsplash:ObtDtWHGNFo.png">
-
-        				</div>
-        				<div class="heading-43">Nature Tour</div>
-      			</div>
-      			<div class="link12">
-        				<div class="divfeaturecard-image">
-          					<img class="image-icon7" alt="" src="image.png">
-
-          					<div class="after">
-          					</div>
-        				</div>
-        				<div class="heading-44">Food</div>
-      			</div>
-      			<div class="link13">
-        				<div class="divfeaturecard-image">
-          					<img class="image-icon7" alt="" src="image.png">
-
-          					<div class="after">
-          					</div>
-        				</div>
-        				<div class="heading-45">Hiking</div>
-      			</div>
-    		</div>
-    		<div class="images">
-      			<div class="images-child">
-      			</div>
-    		</div>
-    		<img class="bgsvg-fill-icon" alt="" src="bg.svg fill.png">
-
-    		<div class="footer">
-      			<div class="divfooter-info">
-        				<div class="symbol9"></div>
-        				<div class="speak-to-our-container">
-          					<span class="speak-to-our-container1">
-            						<span>Speak to our expert at </span>
-            						<span class="span">9222333222</span>
-          					</span>
-        				</div>
-        				<div class="follow-us">Follow Us</div>
-        				<div class="symbol10"></div>
-        				<div class="symbol11"></div>
-        				<div class="symbol12"></div>
-        				<div class="symbol13"></div>
-      			</div>
-      			<div class="divcol-lg-4">
-        				<div class="heading-46">Contact</div>
-        				<div class="link-328-container">
-          					<span class="speak-to-our-container1">
-            						<p class="tour-of-india">Tour of India Pvt. Ltd.</p>
-            						<p class="tour-of-india">4th Floor, Harmony Towers</p>
-            						<p class="tour-of-india">MG Road, Sector 29</p>
-            						<p class="tour-of-india">Gurugram, Haryana 122002</p>
-            						<p class="tour-of-india">India</p>
-          					</span>
-        				</div>
-        				<div class="link-hiviatourscom">support@tourofindia.in</div>
-      			</div>
-      			<div class="divcol-lg-auto">
-        				<div class="heading-47">Company</div>
-        				<div class="link-about">About Us</div>
-        				<div class="link-tourz">Roamly Reviews</div>
-        				<div class="link-contact">Contact Us</div>
-        				<div class="link-travel">Travel Guides</div>
-        				<div class="link-data">Data Policy</div>
-        				<div class="link-cookie">Cookie Policy</div>
-      			</div>
-      			<div class="divcol-lg-auto1">
-        				<div class="heading-48">Support</div>
-        				<div class="link-get">Get in Touch</div>
-        				<div class="link-help">Help center</div>
-        				<div class="link-live">Live chat</div>
-        				<div class="link-how">How it works</div>
-      			</div>
-      			<div class="divcol-lg-3">
-        				<div class="heading-49">Newsletter</div>
-        				<div class="subscribe-to-the-container">
-          					<span class="speak-to-our-container1">
-            						<p class="tour-of-india">Subscribe to the free newsletter and stay</p>
-            						<p class="tour-of-india">up to date</p>
-          					</span>
-        				</div>
-        				<div class="symbol14"></div>
-        				<div class="symbol15"></div>
-        				<div class="input2">
-          					<div class="divplaceholder">
-            						<div class="your-email-address">Your email address</div>
-          					</div>
-        				</div>
-        				<div class="button-send">Send</div>
-      			</div>
-    		</div>
-  	</div>
-
-
-
-
-  	<script>
-    		let buttonContainer = document.getElementById("buttonContainer");
-    		if(buttonContainer) {
-      			buttonContainer.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+</body>
 </html>
