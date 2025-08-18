@@ -15,14 +15,14 @@
   <header>
     <img class="logo-icon" alt="Logo" src="../public/src/Logo.png">
     <div class="search-bar">
-      <input type="text" placeholder="Search destinations or activities">
+      <input id="SearchDest" type="text" placeholder="Search destinations or activities">
     </div>
     <nav>
-      <a href="#">Destinations</a>
-      <a href="#">Points</a>
+      <a href="#trending-dest" class="scroll-btn">Destinations</a>
+      <a href="#">Badges</a>
       <a href="#">Bookings</a>
-      <button class="btn btn-outline">Sign up</button>
-      <button class="btn btn-primary">Log in</button>
+      <button id="signup" class="btn btn-outline">Sign up</button>
+      <button id="signin" class="btn btn-primary">Log in</button>
     </nav>
   </header>
 
@@ -31,80 +31,80 @@
 	<img src="../public/src/hero.jpg" alt="India Travel" class="hero-img">
     <h1>Explore the Soul of India <br> — All in One Place</h1>
     <div class="search-panel">
-      <div>
-        <label>Where</label><br>
-        <input type="text" placeholder="Search destinations">
-      </div>
-      <div>
-        <label>When</label><br>
-        <input type="date">
-      </div>
-      <div>
-        <label>Tour Type</label><br>
-        <select>
-          <option>Select type</option>
-          <option>Adventure</option>
-          <option>City</option>
-          <option>Nature</option>
-        </select>
-      </div>
-      <button>Search</button>
-    </div>
-  </div>
+      	<div>
+        	<h2>Top places to visit</h2>
+    	</div>
+    		<button id="searchTopPlaces">Search</button>
+    	</div>
+  	</div>
 
   <!-- TRENDING DESTINATIONS -->
-  <section>
+  <section id="trending-dest">
     <h2>Trending destinations</h2>
     <div class="destinations">
       <div>
         <img src="../public/src/kerela.jpg" alt="Kerala">
-        <p>Kerala<br><small>100+ Tours</small></p>
+        <p>Kerala</p>
       </div>
       <div>
         <img src="../public/src/delhi.jpg" alt="Delhi">
-        <p>Delhi<br><small>300+ Tours</small></p>
+        <p>Delhi</p>
       </div>
       <div>
         <img src="../public/src/rajasthan.jpg" alt="Rajasthan">
-        <p>Rajasthan<br><small>400+ Tours</small></p>
+        <p>Rajasthan</p>
       </div>
       <div>
         <img src="../public/src/westbengal.jpg" alt="West Bengal">
-        <p>West Bengal<br><small>100+ Tours</small></p>
+        <p>West Bengal</p>
       </div>
       <div>
         <img src="../public/src/northeast.jpg" alt="North East">
-        <p>North East<br><small>600+ Tours</small></p>
+        <p>North East</p>
       </div>
     </div>
   </section>
 
-  <!-- POPULAR THINGS TO DO -->
-  <section>
-    <h2>Popular things to do</h2>
-    <div class="cards">
-      <img src="https://../public/src/.com/400x300/?cruise" alt="Cruises">
-      <img src="https://../public/src/.com/400x300/?beach" alt="Beach Tours">
-      <img src="https://../public/src/.com/400x300/?city" alt="City Tours">
-      <img src="https://../public/src/.com/400x300/?nature" alt="Nature Tour">
-      <img src="https://../public/src/.com/400x300/?food" alt="Food">
-      <img src="https://../public/src/.com/400x300/?hiking" alt="Hiking">
-    </div>
+  <!-- ROAMLY X-FACTOR -->
+  <section class="X-FACTOR">
+    <h1 id="X-FACTOR">Roamly X-Factor</h2>
+	<p>Why Travelers love planning with us</p>
+    
+<div class="card-container">
+  <div class="card">
+    <h2>Earn & Collect Badges</h2>
+    <p>Each trip unlocks badges like "Beach Explorer" or "Culture Seeker". They build your digital travel identity and unlock exclusive perks, discounts, and special offers as you collect more.</p>
+    <button>Check Badges</button>
+  </div>
+
+  <div class="card">
+    <h2>Authentic Local Experiences</h2>
+    <p>Go beyond the tourist checklist. Discover community-curated adventures — from cooking with locals in Jaipur to hidden treks in Himachal — for memories you can't find in guidebooks.</p>
+    <button>Local Experiences</button>
+  </div>
+
+  <div class="card">
+    <h2>Guided by Locals, Backed by Community</h2>
+    <p>Our local guides and traveler community share insights you won't find on Google. Insider tips, secret cafes, best sunrise points — knowledge passed traveler to traveler.</p>
+    <button>Hidden Gems</button>
+  </div>
+</div>
+
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-top">
-      Speak to our expert at <a href="tel:+919222333222">9222333222</a>
+      Speak to our expert at <a href="tel:+910886000000">+91 0886000000</a>
     </div>
     <div class="footer-columns">
       <div>
         <h4>Contact</h4>
-        <p>Tour of India Pvt. Ltd.<br>
-          4th Floor, Harmony Towers<br>
-          MG Road, Sector 29<br>
-          Gurugram, Haryana 122002<br>
-          India</p>
+        <p>Roamly India Pvt. Ltd.<br>
+          4th Floor, AOT<br>
+          GT Road, Adisaptagram<br>
+          India
+		</p>
         <p>Email: support@roamly.in</p>
       </div>
       <div>
@@ -137,4 +137,5 @@
   </footer>
 
 </body>
+<script src="../public/script/index.js"></script>
 </html>

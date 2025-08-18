@@ -21,4 +21,8 @@ router.get('/terms', (req, res) => {
     res.render('terms.ejs');
 });
 
+router.get('/badges', (req, res) => {
+    res.render('badges.ejs');
+});
+
 export default router;

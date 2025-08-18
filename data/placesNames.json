@@ -1,0 +1,270 @@
+{
+  "places_to_visit": {
+    "Rajasthan": {
+      "common": [
+        "Jaipur",
+        "Udaipur",
+        "Jaisalmer",
+        "Jodhpur",
+        "Pushkar",
+        "Ajmer",
+        "Ranthambore National Park"
+      ],
+      "lesser_known": [
+        "Bundi",
+        "Shekhawati",
+        "Mandawa",
+        "Sariska",
+        "Mount Abu"
+      ]
+    },
+    "Uttarakhand": {
+      "common": [
+        "Rishikesh",
+        "Haridwar",
+        "Nainital",
+        "Mussoorie",
+        "Badrinath",
+        "Gangotri",
+        "Yamunotri"
+      ],
+      "lesser_known": [
+        "Chopta",
+        "Kausani",
+        "Mukteshwar",
+        "Ranikhet",
+        "Deoria Tal",
+        "Binsar"
+      ]
+    },
+    "Himachal Pradesh": {
+      "common": [
+        "Manali",
+        "Shimla",
+        "Kullu"
+      ],
+      "lesser_known": [
+        "Spiti Valley",
+        "Khajjiar",
+        "Nako Village",
+        "Kalpa",
+        "Chandratal Lake",
+        "Kheerganga",
+        "Shoja",
+        "Chandolin"
+      ]
+    },
+    "Jammu & Kashmir": {
+      "common": [
+        "Dal Lake, Srinagar",
+        "Shankaracharya Temple, Srinagar",
+        "Gulmarg",
+        "Pahalgam"
+      ],
+      "lesser_known": [
+        "Gurez Valley"
+      ]
+    },
+    "Ladakh": {
+      "common": [
+        "Leh",
+        "Pangong Lake",
+        "Nubra Valley"
+      ],
+      "lesser_known": [
+        "Tso Moriri",
+        "Khardung La",
+        "Tso Kar",
+        "Hemis Monastery",
+        "Alchi Monastery"
+      ]
+    },
+    "Sikkim": {
+      "common": [
+        "Gangtok",
+        "Pelling"
+      ],
+      "lesser_known": [
+        "Ravangla",
+        "Yuksom",
+        "Lachen",
+        "Lachung",
+        "Phuentsholing"
+      ]
+    },
+    "West Bengal": {
+      "common": [
+        "Kolkata",
+        "Darjeeling",
+        "Victoria Memorial, Kolkata"
+      ],
+      "lesser_known": [
+        "Kalimpong",
+        "Sandakphu",
+        "Mandarmani",
+        "Sundarbans"
+      ]
+    },
+    "Assam": {
+      "common": [
+        "Kaziranga National Park",
+        "Dibrugarh"
+      ],
+      "lesser_known": [
+        "Majuli",
+        "Jatinga"
+      ]
+    },
+    "Meghalaya": {
+      "common": [
+        "Shillong",
+        "Cherrapunji"
+      ],
+      "lesser_known": [
+        "Mawlynnong",
+        "Shillong Peak",
+        "Mawphlang",
+        "Majestic Caves"
+      ]
+    },
+    "Manipur": {
+      "common": [
+        "Imphal"
+      ],
+      "lesser_known": [
+        "Loktak Lake",
+        "Dzukou Valley"
+      ]
+    },
+    "Nagaland": {
+      "common": [],
+      "lesser_known": [
+        "Kohima",
+        "Khonoma",
+        "Dzukou Valley"
+      ]
+    },
+    "Kerala": {
+      "common": [
+        "Munnar",
+        "Alleppey Backwaters",
+        "Kochi",
+        "Varkala",
+        "Wayanad"
+      ],
+      "lesser_known": []
+    },
+    "Tamil Nadu": {
+      "common": [
+        "Ooty",
+        "Kodaikanal",
+        "Meenakshi Temple, Madurai",
+        "Rameshwaram",
+        "Pondicherry",
+        "Chennai Marina Beach",
+        "Mahabalipuram"
+      ],
+      "lesser_known": []
+    },
+    "Karnataka": {
+      "common": [
+        "Hampi",
+        "Mysore Palace",
+        "Coorg",
+        "Bangalore Palace"
+      ],
+      "lesser_known": [
+        "Gokarna",
+        "Chitradurga Fort",
+        "Bhadra Wildlife Sanctuary",
+        "Kabini",
+        "Gokak Falls",
+        "Jog Falls",
+        "Kudremukh",
+        "Nandi Hills",
+        "Ranganathittu Bird Sanctuary",
+        "Kabini River"
+      ]
+    },
+    "Maharashtra": {
+      "common": [
+        "Ellora Caves",
+        "Ajanta Caves",
+        "Gateway of India, Mumbai",
+        "Marine Drive, Mumbai",
+        "Shirdi"
+      ],
+      "lesser_known": [
+        "Alibaug",
+        "Tarkarli",
+        "Malshej Ghat",
+        "Lonar Crater Lake",
+        "Velas"
+      ]
+    },
+    "Gujarat": {
+      "common": [
+        "Rann of Kutch",
+        "Gir National Park",
+        "Somnath Temple",
+        "Dwarka"
+      ],
+      "lesser_known": [
+        "Patan",
+        "Saputara",
+        "Bhuj",
+        "Diu"
+      ]
+    },
+    "Odisha": {
+      "common": [
+        "Bhubaneswar",
+        "Konark Sun Temple",
+        "Puri",
+        "Chilika Lake"
+      ],
+      "lesser_known": [
+        "Chilika Island",
+        "Chandipur",
+        "Chilika Bird Sanctuary"
+      ]
+    },
+    "Goa": {
+      "common": [
+        "Goa Beaches",
+        "Basilica of Bom Jesus",
+        "Fort Aguada"
+      ],
+      "lesser_known": [
+        "Dudhsagar Falls",
+        "Divar Island"
+      ]
+    },
+    "Andaman and Nicobar Islands": {
+      "common": [],
+      "lesser_known": [
+        "Havelock Island",
+        "Neil Island",
+        "Baratang Island",
+        "Amed",
+        "Little Andaman Island",
+        "Cellular Jail"
+      ]
+    },
+    "Lakshadweep": {
+      "common": [],
+      "lesser_known": [
+        "Lakshadweep Islands",
+        "Kavaratti",
+        "Minicoy"
+      ]
+    },
+    "Andhra Pradesh": {
+      "common": [],
+      "lesser_known": [
+        "Araku Valley",
+        "Borra Caves"
+      ]
+    }
+  }
+}
